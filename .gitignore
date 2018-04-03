@@ -17,3 +17,8 @@
 
 # ImageProcessor DiskCache 
 **/App_Data/cache/
+
+# Ignore CSS Files
+/CSS/*.css
+/CSS/*.css.map
+
