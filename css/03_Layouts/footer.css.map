@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,YAAY;EACZ,gBAAgB,EAAE,OAAO",
-"sources": ["../../sass/03_Layouts/footer.scss"],
-"names": [],
-"file": "footer.css"
-}
