@@ -1,0 +1,24 @@
+
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Poppins|Roboto);
+
+// Font Variables
+$poppins-sans: 'Poppins', sans-serif;   
+$roboto-sans: 'Roboto', sans-serif;
+
+// COLORS
+$lvs-color:#007A30;
+$primary-color:#2DCA73;
+$secondary1-color:#177E89;
+$secondary2-color:#3C9760;
+$cta-color:#EAC435;
+$white-color:#FDFDFD;
+$darkgrey-color:#202020;
+
+// MIXINS
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+  }
