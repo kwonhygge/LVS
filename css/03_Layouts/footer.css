@@ -1,13 +1,21 @@
 /*
-Error: Undefined variable: "$white-color".
-        on line 2 of /Users/Hafin2/Git projects/LVS/sass/02_Base/style.scss
+Error: Undefined variable: "$darkgrey-color".
+        on line 6 of /Users/Hafin2/Git projects/LVS/sass/03_Layouts/footer.scss
 
-1: body{
-2:     background-color: $white-color;
+1: footer{
+2:     width: 100%;
 3: }
+4: 
+5: .site-footer{
+6: background-color: $darkgrey-color;
+7: }
+8: 
+9: .footer-column{
+10: 
+11: }
 
 Backtrace:
-/Users/Hafin2/Git projects/LVS/sass/02_Base/style.scss:2
+/Users/Hafin2/Git projects/LVS/sass/03_Layouts/footer.scss:6
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -54,4 +62,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white-color\".\A         on line 2 of /Users/Hafin2/Git projects/LVS/sass/02_Base/style.scss\A \A 1: body{\A 2:     background-color: $white-color;\A 3: }"; }
+  content: "Error: Undefined variable: \"$darkgrey-color\".\A         on line 6 of /Users/Hafin2/Git projects/LVS/sass/03_Layouts/footer.scss\A \A 1: footer{\A 2:     width: 100%;\A 3: }\A 4: \A 5: .site-footer{\A 6: background-color: $darkgrey-color;\A 7: }\A 8: \A 9: .footer-column{\A 10: \A 11: }"; }
