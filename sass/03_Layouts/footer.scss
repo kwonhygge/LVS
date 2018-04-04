@@ -1,27 +1,55 @@
-footer{
-    width: 100%;
-}
-
 .site-footer{
 background-color: $darkgrey-color;
+color: $white-color;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
 }
+
+.item-wrapper{
+    width:80%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    
+    }
 
 .footer-column{
-
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+  
 }
 
-#footer.sidebar1{
-    
+#footer-sidebar1{
+    width:35%; 
 }
 
-#footer.sidebar2{
-    
+#footer-sidebar2{
+    width:15%;
 }
 
-#footer.sidebar3{
-    
+#footer-sidebar3{
+    width:35%;
 }
 
-#footer.sidebar4{
-    
+#footer-sidebar4{
+    width:15%;
 }
+
+.medium-icons{
+    font-size: 30px;
+    padding-right: 5px;
+    color: $white-color;
+}
+
+
+.copyright-footer{
+    background-color: $primary-color;
+    width:100%;
+    color: $white-color;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+

@@ -1,0 +1,35 @@
+.activity-calender{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header-elements{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.page-description{
+    width: 60%;
+}
+
+.filter-view{
+    width: 25%;
+    align-self: flex-end;
+}
+
+.activity-item{
+    width: 30%;
+}
+
+.activity-img{
+    width: 100%;
+}
+
+.item-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
