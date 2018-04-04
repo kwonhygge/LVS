@@ -40,7 +40,7 @@ body {
     
     .form {
         background-color: #fff;
-        width: 600px;
+        width: 800px;
         height: 650px;
         box-shadow: 0 8px 28px 0 rgba(0,0,0,0.1);
         border-radius: 10px;
@@ -72,7 +72,7 @@ body {
         background-color: #fff;
         height: 500px;
         margin-right: 20px; 
-        width: 380px;
+        width: 400px;
       }
 }
 
@@ -107,7 +107,7 @@ hr {
   background: #ddd;
 }
 
-form > input[type="submit"] {
+div.contactContainer > div.form > form > input[type="submit"] {
     margin-top: 15px;
     background-color: $cta-color;
     border: 0;
