@@ -1,6 +1,10 @@
-.activity-calender{
-    width: 80%;
+.page-container{
+    width: 1200px;
     margin: 0 auto;
+}
+
+.inner-wrapper{
+    padding: 10px
 }
 
 .header-elements{
@@ -19,6 +23,14 @@
     align-self: flex-end;
 }
 
+.month-bar{
+    background-color: $primary-color;
+    @include border-radius($radius);
+    box-shadow: $shadow;
+    padding: 20px 35px;
+    margin: 20px 0;
+}
+
 .activity-item{
     width: 30%;
 }
@@ -32,4 +44,11 @@
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.activity-title{
+    margin: 40px;
+}
+.activity-shortdescription{
+    margin: 40px;
 }

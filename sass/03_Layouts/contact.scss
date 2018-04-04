@@ -40,7 +40,7 @@ body {
     
     .form {
         background-color: #fff;
-        width: 800px;
+        width: 750px;
         height: 650px;
         box-shadow: 0 8px 28px 0 rgba(0,0,0,0.1);
         border-radius: 10px;
@@ -52,7 +52,7 @@ body {
         input {
             border: 1px solid #e8e8e8;
             border-radius: 5px;
-            width: 500px;
+            width: 650px;
             height: 35px;
           }
 
@@ -63,24 +63,23 @@ body {
         }
 
         h3 {
-            font-weight: 400;
+            color: $darkgrey-color;
             margin-bottom: 0px;
           }
       }
 
       .wrapper {
         background-color: #fff;
-        height: 500px;
+        height: 490px;
         margin-right: 20px; 
-        width: 400px;
+        width:530px;
       }
 }
 
 .info {
   margin: 40px;
 
-  h1 {
-    font-size: 19px;
+  h2 {
     text-align: center;
     color: $darkgrey-color;
   }
@@ -101,18 +100,13 @@ hr {
   border-top: 0.5px solid #F3F3F3;
 }
 
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-}
 
 div.contactContainer > div.form > form > input[type="submit"] {
     margin-top: 15px;
     background-color: $cta-color;
     border: 0;
     color: #fff;
-    width: 10vw;
+    width: 8vw;
 }
 
 
