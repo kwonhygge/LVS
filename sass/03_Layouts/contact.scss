@@ -49,6 +49,19 @@ body {
       form {
         margin: 40px;
 
+        input {
+            border: 1px solid #e8e8e8;
+            border-radius: 5px;
+            width: 500px;
+            height: 35px;
+          }
+
+        textarea {
+            border: 1px solid #e8e8e8;
+            border-radius: 5px;
+            resize: none;
+        }
+
         h3 {
             font-weight: 400;
             margin-bottom: 0px;
@@ -67,14 +80,16 @@ body {
   margin: 40px;
 
   h1 {
-    font-size: 20px;
+    font-size: 19px;
     text-align: center;
+    color: $darkgrey-color;
   }
 }
 
 ul {
   list-style-type: none;
   padding-left: 0px;
+  color: $darkgrey-color;
 }
 
 .maps {
@@ -92,9 +107,16 @@ hr {
   background: #ddd;
 }
 
-input {
-  border: 1px solid #e8e8e8;
-  border-radius: 5px;
-  width: 500px;
-  height: 35px;
+form > input[type="submit"] {
+    margin-top: 15px;
+    background-color: $cta-color;
+    border: 0;
+    color: #fff;
+    width: 10vw;
 }
+
+
+ul > li > p > a{
+    text-decoration: none;
+    color: $primary-color;
+  }
