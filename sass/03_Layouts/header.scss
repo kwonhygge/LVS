@@ -53,7 +53,7 @@ header{
 
 //Main Hero
 .banner{
-    background-image: url(../img/Banner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/Banner.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -96,11 +96,17 @@ header{
         .card-body{
             padding: 25px;
             h3{
-                margin: 0;
+                margin: 0px 0 20px 0;
+            }
+            p{
+                margin-bottom: 15px;
             }
             a{
                 color: $darkgrey-color;
                 text-decoration: none;
+                &:hover{
+                    color: $cta-color;
+                }
             }
         }
     }
@@ -121,7 +127,10 @@ header{
 
 //Projects Section
 .projects{
-    background-color: $primary-color;
+    background-image: linear-gradient(rgba(45, 202, 115, 0.93), rgba(45, 202, 115, 0.93)), url(../img/project_bg.jpg);
+    background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
     color: $white-color;
     padding: 75px 0;
     .projects-container{
@@ -201,7 +210,7 @@ header{
 //Newsletter Section
 .newsletter{
     padding: 75px 0;
-    background-image: url(../img/newsletter-bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/newsletter-bg.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
