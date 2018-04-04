@@ -1,21 +1,17 @@
 /*
 Error: Undefined variable: "$white-color".
-        on line 14 of C:\Users\Andreas\Documents\Web Development\Exame Project\LVS\sass\02_Base\style.scss
+        on line 2 of C:\Users\Mathias\Documents\GitHub\LVS\sass\02_Base\style.scss
 
-9:       font-size: 16px;
-10:     }
-11:   }
-12: 
-13: body{
-14:     background-color: $white-color;
-15:     -webkit-text-size-adjust: 100%;  //fix for iOS
-16:     font-size: 1rem;
-17: }
-18: 
-19: //FONTS
+1: body{
+2:     background-color: $white-color;
+3:     -webkit-text-size-adjust: 100%;  //fix for iOS
+4:     font-size: 1rem;
+5: }
+6: 
+7: //FONTS
 
 Backtrace:
-C:\Users\Andreas\Documents\Web Development\Exame Project\LVS\sass\02_Base\style.scss:14
+C:\Users\Mathias\Documents\GitHub\LVS\sass\02_Base\style.scss:2
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -62,4 +58,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white-color\".\A         on line 14 of C:\Users\Andreas\Documents\Web Development\Exame Project\LVS\sass\02_Base\style.scss\A \A 9:       font-size: 16px;\A 10:     }\A 11:   }\A 12: \A 13: body{\A 14:     background-color: $white-color;\A 15:     -webkit-text-size-adjust: 100%;  //fix for iOS\A 16:     font-size: 1rem;\A 17: }\A 18: \A 19: //FONTS"; }
+  content: "Error: Undefined variable: \"$white-color\".\A         on line 2 of C:\Users\Mathias\Documents\GitHub\LVS\sass\02_Base\style.scss\A \A 1: body{\A 2:     background-color: $white-color;\A 3:     -webkit-text-size-adjust: 100%;  //fix for iOS\A 4:     font-size: 1rem;\A 5: }\A 6: \A 7: //FONTS"; }
