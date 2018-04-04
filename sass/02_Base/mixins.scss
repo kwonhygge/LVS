@@ -5,3 +5,8 @@
         -ms-border-radius: $radius;
             border-radius: $radius;
 }
+
+@mixin max-width-center{
+    max-width: 90%;
+    margin: 0 auto;
+}
