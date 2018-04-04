@@ -37,6 +37,25 @@
 
 .activity-img{
     width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+#overlay{
+    position: relative;
+    float: left;
+    cursor: pointer;
+  }
+  
+#overlay:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(66, 66, 66, 0.5);
+    border-radius: 10px 10px 0 0;
 }
 
 .item-container{
@@ -48,7 +67,40 @@
 
 .activity-title{
     margin: 40px;
+    position: absolute;
+    left: 0;
+    color: $white-color;
 }
 .activity-shortdescription{
     margin: 40px;
+    display: inline-block;
+
+    i{
+        color:$primary-color;
+    }
+
+    span{
+        font-size: 0.8rem;
+    }
+}
+
+.readmore-center{
+    text-align: center;
+    padding: 5px;
+    
+    &:before {
+        content : "";
+        position: absolute;
+        left    : 0;
+        bottom  : 0;
+        height  : 1px;
+        width   : 50%;  /* or 100px */
+        border-bottom:1px solid $light-grey;
+    }
+}
+
+
+
+i{
+    margin: 5px;
 }
