@@ -3,7 +3,6 @@ img{
 }
 
 //Header
-
 header{
     background-color: $primary-color;
 }
@@ -30,7 +29,6 @@ header{
 }
 
 //Navigation
-
 #MobileNav{
     padding: 20px 0px;
     span{
@@ -53,8 +51,7 @@ header{
         }
 }
 
-//Main Banner Section
-
+//Main Hero
 .banner{
     background-image: url(../img/Banner.jpg);
 	background-position: center;
@@ -75,7 +72,6 @@ header{
 }
 
 //CTA Section
-
 .cards{
     padding: 75px 0px;
     .cards-container{
@@ -111,7 +107,6 @@ header{
 }
 
 //About Section
-
 .about{
     padding-top: 75px;
     background-color: $light-grey;
@@ -125,7 +120,6 @@ header{
 }
 
 //Projects Section
-
 .projects{
     background-color: $primary-color;
     color: $white-color;
@@ -145,7 +139,6 @@ header{
 }
 
 //News & Video
-
 .news{
     padding: 75px 0;    
 }
@@ -168,7 +161,6 @@ header{
 }
 
 //Testimonial Section
-
 .testimonials{
     background-color: $primary-color;
     padding: 75px 0;
@@ -207,7 +199,6 @@ header{
 }
 
 //Newsletter Section
-
 .newsletter{
     padding: 75px 0;
     background-image: url(../img/newsletter-bg.jpg);
@@ -244,7 +235,6 @@ header{
 }
 
 //Form Element - Style
-
 input[type="email"],
 textarea,
 select {
