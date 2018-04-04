@@ -31,7 +31,8 @@ h4{
 
 
 p{
-    font-family: $roboto-sans $normal;
+    font-family: $roboto-sans !important;
+    font-weight: $normal;
     font-size: 1.0rem; 
     margin: 0;
 }
