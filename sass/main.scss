@@ -6,8 +6,9 @@
         "../sass/01_Helpers/normalize.scss";
 
 //02 - BASE STYLING
-@import "../sass/02_Base/mixins.scss",
+@import 
         "../sass/02_Base/variables.scss",
+        "../sass/02_Base/mixins.scss",
         "../sass/02_Base/style.scss" ;
 
 //03 - LAYOUTS STYLING
