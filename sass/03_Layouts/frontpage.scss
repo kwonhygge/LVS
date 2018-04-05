@@ -2,7 +2,7 @@
 //Main Banner Section
 
 .banner{
-    background-image: url(../img/Banner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/Banner.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -90,6 +90,8 @@
             margin-bottom: 1.25rem;
             display: block;
             color: $primary-color;
+            font-style: italic;
+            font-weight: bold;
         }
         p{
             margin-bottom: 2.1rem;
@@ -101,7 +103,10 @@
 //Projects Section
 
 .projects{
-    background-color: $primary-color;
+    background-image: linear-gradient(rgba(45, 202, 115, 0.95), rgba(45, 202, 115, 0.95)), url(../img/project_bg.jpg);
+    background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
     color: $white-color;
     padding: 75px 0;
     .projects-container{
@@ -110,14 +115,24 @@
     .projects-wrapper{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;¨
-        div{
-            width: 45%;
-            text-align: center; 
+        justify-content: space-between;
+            div{
+                width: 45%;
+                text-align: center; 
+                &:nth-child(1), &:nth-child(2){
+                    margin-bottom: 25px;
+                }
+             h4{
+                font-size: 5rem;
+                margin: 0;
+            }
+            p{
+
+            }
         }
     }
     .project-info{
-        margin-top: 3.1rem;
+        margin-bottom: 3.1rem;
         h2{
             font-size: 1.9rem;
         }
@@ -233,7 +248,7 @@
 
 .newsletter{
     padding: 75px 0;
-    background-image: url(../img/newsletter-bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/newsletter-bg.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -332,6 +347,25 @@
             margin-bottom: 0;
         }
     }
+
+
+    
+//Sponsor Section
+    .spons{
+        padding: 50px 0;
+        .spons-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            div{
+                width: 20%;
+            &:nth-child(1), &:nth-child(2){
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+    
 }
 
 /**		MEDIA QUERY - Computer 		**/ 
@@ -339,7 +373,7 @@
 @media only screen and (min-width: 1200px) {
 
     .cards{
-        padding: 75px 0px;
+        padding: 110px 0px;
         .cards-container{
             max-width: 1200px;
             text-align: center;
@@ -348,6 +382,40 @@
             }
             p{
                 line-height: 1.8rem;   
+            }
+        }
+    }
+
+
+    .projects{
+        padding: 140px 0;
+        .projects-container{
+           max-width: 1200px;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+        }
+        .projects-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            order: 1;
+                div{
+                    width: 45%;
+                    text-align: center; 
+                    h4{
+                        font-size: 8rem;
+                    }
+                }
+        }
+        .project-info{
+            margin-bottom: 0;
+            width: 35%;
+            h2{
+                font-size: 1.9rem;
+            }
+            p{
+                margin-bottom: 2.1rem;
             }
         }
     }
