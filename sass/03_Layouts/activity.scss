@@ -1,5 +1,5 @@
 .page-container{
-    width: 1200px;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -68,7 +68,7 @@
     border-radius: 10px 10px 0 0;
 }
 
-.item-container{
+.item-wrapper{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -92,6 +92,8 @@
     }
     
 }
+
+
 .activity-shortdescription{
     margin: 40px;
     display: inline-block;
@@ -259,8 +261,6 @@
     }
  }
 
-// ATTEND BUTTON LEFT SIDE
-
 .attend-button{
     background-color: $cta-color;
     border-radius: 0 0 10px 10px;
@@ -281,7 +281,13 @@
 /**		MEDIA QUERY - Computer 		**/ 
 
 @media only screen and (min-width: 1200px){
+    .month .item-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
 
+        
+    }
+    
 
 }
 
@@ -289,7 +295,27 @@
 /**		MEDIA QUERY - Tablet lille og på højkant 		**/  
 
 @media only screen and (min-width: 768px) {
+    .item-wrapper{
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
 
+}
+
+@media only screen and (max-width: 980px) {
+    .activity-item{
+        width: 48%;
+    }
+
+}
+
+@media only screen and (max-width: 672px) {
+    
+    .activity-item{
+        width: 100%;
+    }
 }
 
 

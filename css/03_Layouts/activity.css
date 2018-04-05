@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$primary-color".
-        on line 27 of C:\Users\Andreas\Documents\Web Development\Exame Project\LVS\sass\03_Layouts\activity.scss
+        on line 31 of C:\Users\Andreas\Documents\Web Development\Exame Project\LVS\sass\03_Layouts\activity.scss
 
-22:     width: 25%;
-23:     align-self: flex-end;
-24: }
-25: 
-26: .month-bar{
-27:     background-color: $primary-color;
-28:     @include border-radius($radius);
-29:     box-shadow: $shadow;
-30:     padding: 20px 35px;
-31:     margin: 20px 0;
-32: }
+26:     width: auto;
+27:     align-self: flex-end;
+28: }
+29: 
+30: .month-bar{
+31:     background-color: $primary-color;
+32:     @include border-radius($radius);
+33:     box-shadow: $shadow;
+34:     padding: 20px 35px;
+35:     margin: 20px 0;
+36:     color: $white-color;
 
 Backtrace:
-C:\Users\Andreas\Documents\Web Development\Exame Project\LVS\sass\03_Layouts\activity.scss:27
+C:\Users\Andreas\Documents\Web Development\Exame Project\LVS\sass\03_Layouts\activity.scss:31
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$primary-color\".\A         on line 27 of C:\Users\Andreas\Documents\Web Development\Exame Project\LVS\sass\03_Layouts\activity.scss\A \A 22:     width: 25%;\A 23:     align-self: flex-end;\A 24: }\A 25: \A 26: .month-bar{\A 27:     background-color: $primary-color;\A 28:     @include border-radius($radius);\A 29:     box-shadow: $shadow;\A 30:     padding: 20px 35px;\A 31:     margin: 20px 0;\A 32: }"; }
+  content: "Error: Undefined variable: \"$primary-color\".\A         on line 31 of C:\Users\Andreas\Documents\Web Development\Exame Project\LVS\sass\03_Layouts\activity.scss\A \A 26:     width: auto;\A 27:     align-self: flex-end;\A 28: }\A 29: \A 30: .month-bar{\A 31:     background-color: $primary-color;\A 32:     @include border-radius($radius);\A 33:     box-shadow: $shadow;\A 34:     padding: 20px 35px;\A 35:     margin: 20px 0;\A 36:     color: $white-color;"; }
