@@ -47,6 +47,20 @@ p{
     box-shadow: $shadow;
 }
 
+.cta-button{
+    @include border-radius($radius50);
+    box-shadow: $shadowsmall;
+    height: 65px;
+    width: 230px;
+    text-align: center;
+    background-color: $cta-color;
+    font-weight: $semibold;
+    color: $white-color;
+
+    &:hover{
+        background-color: #F0B323;
+    }
+}
 
   
  
