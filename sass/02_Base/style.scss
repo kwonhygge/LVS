@@ -32,7 +32,7 @@ h4{
 
 p{
     font-family: $roboto-sans !important;
-    font-weight: $normal;
+    font-weight: $light;
     font-size: 1.0rem; 
     margin: 0;
 }
@@ -45,6 +45,7 @@ p{
 .wrapper {
     @include border-radius($radius);
     box-shadow: $shadow;
+<<<<<<< HEAD
 }
 
 .cta-button{
@@ -64,3 +65,6 @@ p{
 
   
  
+=======
+}
+>>>>>>> bfa47c91d6f617047450712c73fd168fb603032f
