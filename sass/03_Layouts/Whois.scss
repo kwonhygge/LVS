@@ -1,0 +1,134 @@
+//colors
+$color_mountain_meadow_approx: #2dca73;
+$white: #ffffff;
+$black: black;
+$gray: gray;
+$color_cream_can_approx: #f0c45c;
+
+//fonts
+$font_0: Roboto;
+
+//urls
+$url_0: url(https://imageshack.com/a/img924/386/K4JSb6.png);
+
+* {
+	font-family: $font_0;
+}
+p {
+	font-weight: 200;
+	line-height: 25px;
+}
+h4 {
+	font-weight: 300;
+	line-height: 59px;
+}
+.header-container {
+	border-bottom: 1px solid $color_mountain_meadow_approx;
+	display: flex;
+	background-color: $color_mountain_meadow_approx;
+	height: 50px;
+	width: 100%;
+	align-items: center;
+	a {
+		text-decoration: none;
+		color: $white;
+	}
+}
+.contact-info {
+	width: 83%;
+	padding-left: 100px;
+	font-size: 18px;
+	word-spacing: 2px;
+	letter-spacing: 2px;
+}
+.line-elements {
+	word-spacing: 20px;
+	font-size: 25px;
+}
+.nav-container {
+	padding-left: 100px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	ul {
+		display: flex;
+		flex-direction: row;
+		float: right;
+		padding-right: 100px;
+		padding-top: 15px;
+		li {
+			list-style: none;
+			padding-left: 50px;
+			font-size: 21px;
+			a:link {
+				text-decoration: none;
+				color: $black;
+			}
+		}
+	}
+}
+.banner-container {
+	width: 100%;
+	height: 550px;
+	background-color: $gray;
+	background-blend-mode: color;
+	background-image: $url_0;
+	background-blend-mode: darken;
+}
+.cta-container {
+	padding-left: 100px;
+}
+.content {
+	text-align: center;
+	padding: 50px 450px 50px 350px;
+	font-size: 30px;
+}
+.cta-wrapper {
+	display: flex;
+	justify-content: space-around;
+	padding-right: 100px;
+	padding-left: 100px;
+	margin-right: 200px;
+	margin-left: 100px;
+}
+.card_box {
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	position: relative;
+	h3 {
+		position: absolute;
+		top: 150px;
+		left: 30px;
+		color: $white;
+	}
+}
+.card-body {
+	text-align: center;
+	width: 379.89px;
+	height: 350px;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 2px 2px 20px $gray;
+	p {
+		font-size: 17px;
+		padding: 20px;
+	}
+}
+#learn {
+	padding-top: 20px;
+	padding-left: 60%;
+	a {
+		width: 144.11px;
+		background-color: $color_cream_can_approx;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 50px;
+		display: inline-block;
+		text-align: center;
+		text-decoration: none;
+		font-size: 15px;
+		padding: 15px 0;
+		color: $white;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 2px 2px 20px $gray;
+	}
+}
