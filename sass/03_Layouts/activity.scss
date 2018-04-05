@@ -203,28 +203,32 @@
         h4{
             margin-top: 0;
         }
+    }
 
     .maps {
-        background-color: none;
-        height: none;
+        background-color: transparent;
+        height: auto;
         border-radius: $radius;
-    }    
+    }  
     
-    .attend-center {
-        background-color: $cta-color;
-        border-radius: 0 0 10px 10px;
-        text-align: center;
-        padding: 5px;
-    
-        a{
-            text-decoration: none;
+    .activity-info{
+        p{
+            margin-bottom:40px;
         }
     
-        p{
-            color: $white-color;
+        i{
+            color:$primary-color;
+            margin-right: 5px;
+        }
+
+        li{
+            margin: 10px 0;
         }
     }
-}
+    
+    
+
+
     .activity-decription {
         width: 750px;
         height: auto;
@@ -232,11 +236,15 @@
         padding: 40px;
       }
 
-      h3{
-          color: $primary-color;
-      }
+    h3{
+        color: $primary-color;
+    }
 
-      .previous-events{
+    .previous-events{
+        &:first-child {
+            margin-right: 20px;
+        }
+
         img{
             width: 48%;
             position: relative;
@@ -244,11 +252,27 @@
             background-repeat: no-repeat;
             background-size: cover;
             height: 225px;
+            border-radius: $radius;
+            
         }
-      }
-
-      
-
+    }
  }
+
+.attend-button{
+    background-color: $cta-color;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    padding: 20px;
+    font-weight: $semibold;
+    color: $white-color;
+
+    a{
+        text-decoration: none;
+    }
+
+    p{
+        color: $white-color;
+    }
+}
 
 
