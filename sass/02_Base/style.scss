@@ -45,18 +45,19 @@ p{
 .wrapper {
     @include border-radius($radius);
     box-shadow: $shadow;
-<<<<<<< HEAD
 }
 
 .cta-button{
     @include border-radius($radius50);
     box-shadow: $shadowsmall;
-    height: 65px;
     width: 230px;
+    padding: 20px 0;
+    display: block;
     text-align: center;
     background-color: $cta-color;
     font-weight: $semibold;
     color: $white-color;
+    text-decoration: none;
 
     &:hover{
         background-color: #F0B323;
@@ -65,6 +66,3 @@ p{
 
   
  
-=======
-}
->>>>>>> bfa47c91d6f617047450712c73fd168fb603032f

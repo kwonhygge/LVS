@@ -1,0 +1,355 @@
+
+//Main Banner Section
+
+.banner{
+    background-image: url(../img/Banner.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    height: 80vh;
+    color: $white-color;
+    display: flex;
+    align-items: center;
+}
+
+.banner-container{
+    @include max-width-center;
+    p{
+        margin-bottom: 2.1rem;
+    }
+    a{
+        color: $white-color;
+        text-decoration: none;
+    }
+}
+
+//CTA Section
+
+.cards{
+    padding: 75px 0px;
+    .cards-container{
+        @include max-width-center;
+        text-align: center;
+        h2{
+            margin: 0px 0 20px 0;
+        }
+        p{
+            line-height: 1.8rem;   
+        }
+    }
+}
+
+.card-wrapper{
+    margin-top: 35px;
+    .card-box{
+        margin-bottom: 30px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        img{
+            border-radius: 10px 10px 0 0;
+        }
+        .card-body{
+            padding: 25px;
+            h3{
+                font-size: 1.1rem;
+                margin: 0;
+            }
+            p{
+                margin: 0.9rem 0;
+            }
+            a{
+                color: $darkgrey-color;
+                text-decoration: none;
+                
+                &:hover{
+                    color: $cta-color;
+                }
+            }
+            i{
+                color: $cta-color;
+            }
+        }
+    }
+}
+
+//About Section
+
+.about{
+    padding-top: 75px;
+    background-color: $light-grey;
+    .about-container{
+        @include max-width-center;
+        margin-bottom: 50px;
+        h2{
+            font-size: 1.9rem;
+            margin: 0px 0 20px 0;
+        }
+        span{
+            line-height: 1.6rem;
+            margin-bottom: 1.25rem;
+            display: block;
+            color: $primary-color;
+        }
+        p{
+            margin-bottom: 2.1rem;
+            line-height: 1.8rem;
+        }
+    }
+}
+
+//Projects Section
+
+.projects{
+    background-color: $primary-color;
+    color: $white-color;
+    padding: 75px 0;
+    .projects-container{
+        @include max-width-center;
+    }
+    .projects-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;¨
+        div{
+            width: 45%;
+            text-align: center; 
+        }
+    }
+    .project-info{
+        margin-top: 3.1rem;
+        h2{
+            font-size: 1.9rem;
+        }
+        p{
+            margin-bottom: 2.1rem;
+        }
+    }
+}
+
+//News & Video
+
+.news{
+    padding: 75px 0;    
+}
+.video-container{
+    @include max-width-center;
+    .video{
+        color: $white-color;
+        position: relative;
+        .video-text-wrapper{
+            position: absolute;
+            top: 0;
+            h2{
+                margin: 0;
+            }
+        }
+    }
+}
+.news-container{
+    @include max-width-center;
+}
+
+.text-wrapper{
+    h2{
+        margin: 0 0 1.25rem 0; 
+    }
+    p{
+        line-height: 1.8rem;
+        margin-bottom: 2.1rem;
+    }
+
+}
+
+.news-box{
+    margin-top: 2.1rem;
+    position: relative;
+    img{
+        border-radius: $radius;
+    }
+}
+
+.news-text{
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    color: $white-color;
+    font-size: 0.9rem;
+    h4{
+        margin: 0.9rem 0;
+    }
+    span{
+        border-radius: 5px;
+        background-color: $cta-color;
+        padding: 0.5rem 0.9rem;
+    }
+    a{
+        color: $white-color;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+}
+
+//Testimonial Section
+
+.testimonials{
+    background-color: $primary-color;
+    padding: 75px 0;
+}
+
+.testimonials-container{
+    color: $white-color;
+    text-align: center;
+    @include max-width-center;
+}
+
+.slider-wrapper{
+    margin-top: 35px;
+}
+
+.box-wrapper{
+    margin-bottom: 30px;
+    color: $darkgrey-color;
+    img{
+        border-radius: 50%;
+        width: 110px;
+        height: 110px;
+    }
+}
+
+.speach-box{
+    background-color: $white-color;
+    padding: 30px;
+    margin-bottom: 35px;
+        p{
+            margin: 0 0 25px 0;
+        }
+        h4{
+            margin: 0;
+        }
+}
+
+//Newsletter Section
+
+.newsletter{
+    padding: 75px 0;
+    background-image: url(../img/newsletter-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.newsletter-container{
+    color: $white-color;
+    @include max-width-center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h2{
+        margin: 0px 0 20px 0;
+    }
+    p{
+        margin: 0 0 15px 0;
+    }
+    a{
+        color: $white-color;
+    }
+}
+
+//Form Element - Style
+
+.newsletter-form
+ {
+    border: none;
+    border-bottom-width: medium;
+    border-bottom-style: none;
+    border-bottom-color: currentcolor;
+    margin-bottom: 20px;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 8px 16px;
+    width: 90%;
+    background-color: transparent;
+    border-bottom: 1px solid #9F9F9F;
+    color: $white-color;
+    text-align: center;
+  &:focus{
+    border-bottom: 1px solid $primary-color;
+    }
+}
+
+.button-form{
+    border:none;
+    margin: 1.5rem 0;
+    background-color: $cta-color;
+    border-radius: 50px;
+    padding: 1.1rem 3.75rem;
+}
+
+.social-links{
+    a{
+        font-size: 1.5rem;
+        padding: 0.6rem;
+        display: inline-flex;
+        text-decoration: none;
+        &:hover{
+            color: $cta-color;
+        }
+    }
+}
+
+//Sponsor Section
+.spons{
+    padding: 35px 0;
+    background-color: $light-grey;
+    .spons-container{
+        @include max-width-center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        div{
+            width: 45%;
+        &:nth-child(1), &:nth-child(2){
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+/**		MEDIA QUERY - Tablet lille og på højkant 		**/  
+
+@media only screen and (min-width: 768px) {
+    .card-wrapper {
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-between;
+
+        .card-box{
+            width: 31%;
+            margin-bottom: 0;
+        }
+    }
+}
+
+/**		MEDIA QUERY - Computer 		**/ 
+
+@media only screen and (min-width: 1200px) {
+
+    .cards{
+        padding: 75px 0px;
+        .cards-container{
+            max-width: 1200px;
+            text-align: center;
+            h2{
+                margin: 0px 0 20px 0;
+            }
+            p{
+                line-height: 1.8rem;   
+            }
+        }
+    }
+	
+}
