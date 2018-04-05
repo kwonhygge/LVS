@@ -17,6 +17,7 @@
     margin: 0 auto;
     h1{
         font-size: 2.5rem;
+        font-weight: $semibold;
     }
     p{
         margin-bottom: 2.1rem;
@@ -88,6 +89,7 @@
         h2{
             font-size: 1.9rem;
             margin: 0px 0 20px 0;
+            font-weight: bold;
         }
         span{
             line-height: 1.6rem;
@@ -140,6 +142,7 @@
         h2{
             margin: 0px 0 20px 0;
             font-size: 1.9rem;
+            font-weight: bold;
         }
         p{
             margin-bottom: 2.1rem;
@@ -168,7 +171,7 @@
 }
 .news-container{
     @include max-width-center;
-    margin-top: 3.1rem;
+    margin-top: 4.6rem;
 }
 
 .text-wrapper{
@@ -179,7 +182,6 @@
         line-height: 1.8rem;
         margin-bottom: 2.1rem;
     }
-
 }
 
 .news-box{
@@ -197,12 +199,15 @@
     color: $white-color;
     font-size: 0.9rem;
     h4{
+        font-size: 1.1rem;
+        width: 250px;
         margin: 0.9rem 0;
     }
     span{
         border-radius: 5px;
         background-color: $cta-color;
         padding: 0.5rem 0.9rem;
+        font-size: 0.75rem;
     }
     a{
         color: $white-color;
@@ -334,9 +339,6 @@
         &:nth-child(1), &:nth-child(2){
                 margin-bottom: 25px;
             }
-            img{
-                width: 180px;
-            }
         }
     }
 }
@@ -393,7 +395,15 @@
         }
     }
 
-//News section
+    .text-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div{
+            width: 42%;
+        }
+    }       
+
     .news-box-wrapper{
         display: flex;
         justify-content: space-between;
@@ -441,13 +451,13 @@
     .spons{
         padding: 50px 0;
         .spons-container{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
             div{
                 width: 20%;
             &:nth-child(1), &:nth-child(2){
                     margin-bottom: 0px;
+                }
+                img{
+                    width: 180px;
                 }
             }
         }
@@ -462,8 +472,12 @@
     .banner-container{
         width: 1200px;
         margin: 0 auto;
+        h1{
+            font-size: 3.2rem;
+        }
         p{
             margin-bottom: 2.1rem;
+            width: 500px;
         }
         a{
             color: $white-color;
@@ -511,7 +525,6 @@
         }
     }
 
-
     .projects{
         padding: 140px 0;
         .projects-container{
@@ -544,14 +557,13 @@
         max-width: 950px;
     }
 
-     .news-container{
-        max-width: 1200px;
+    //News section
+    .news{
+        padding: 100px 0px;
     }
 
-    .spons{
-        .spons-container{
-            max-width: 1200px;
-        }
+     .news-container{
+        max-width: 1200px;
     }
 
     .slider-wrapper{
@@ -561,6 +573,18 @@
 
     .newsletter{
         padding: 140px 0px;
+        .newsletter-container{
+            max-width: 750px;
+            h2{
+               font-size: 1.9rem; 
+            }
+        }
+    }
+
+    .spons{
+        .spons-container{
+            max-width: 1200px;
+        }
     }
 	
 }
