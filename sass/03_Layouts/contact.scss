@@ -162,6 +162,7 @@ ul > li > p > a{
   .contactContainer {
     @include max-width-center;
     margin-top: 30px;
+    margin-bottom: 30px;
   }
   
   .maps {

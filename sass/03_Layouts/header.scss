@@ -119,3 +119,19 @@ header{
     }
 
 }
+
+
+/**		MEDIA QUERY - Tablet lille og på højkant 		**/  
+
+@media only screen and (min-width: 768px) {
+    .card-wrapper {
+        margin-top: 35px;
+        display: flex;
+    }
+}
+
+/**		MEDIA QUERY - Computer 		**/ 
+
+@media only screen and (min-width: 1200px) {
+	
+}
