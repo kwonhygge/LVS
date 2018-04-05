@@ -146,13 +146,14 @@
 
 
 
-//SINGLE ACTIVITY SCSS
+//SINGLE ACTIVITY PAGE SCSS
 .activity-container{
     display: flex;
     justify-content: center;
     margin-top: 60px;
     margin-bottom: 60px;
 
+    // RIGHT SIDE CONTENT
     #overlay{
         span{
             color: $primary-color;
@@ -227,7 +228,7 @@
     }
     
     
-
+    // LEFT SIDE CONTENT
 
     .activity-decription {
         width: 750px;
@@ -258,6 +259,8 @@
     }
  }
 
+// ATTEND BUTTON LEFT SIDE
+
 .attend-button{
     background-color: $cta-color;
     border-radius: 0 0 10px 10px;
@@ -273,6 +276,20 @@
     p{
         color: $white-color;
     }
+}
+
+/**		MEDIA QUERY - Computer 		**/ 
+
+@media only screen and (min-width: 1200px){
+
+
+}
+
+
+/**		MEDIA QUERY - Tablet lille og på højkant 		**/  
+
+@media only screen and (min-width: 768px) {
+
 }
 
 
