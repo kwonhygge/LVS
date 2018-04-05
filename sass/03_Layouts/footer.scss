@@ -4,6 +4,22 @@ color: $white-color;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
+
+    p{
+        color: $light-grey;
+        font-size: 1rem;
+        line-height: 1.2;
+        opacity: 0.3;
+        padding-right: 40px;
+    }
+
+    ul{
+        color: $light-grey;
+        font-size: 1rem;
+        line-height: 1.2;
+        opacity: 0.3;
+
+    }
 }
 
 .item-wrapper{
@@ -45,11 +61,16 @@ justify-content: space-between;
 
 
 .copyright-footer{
-    background-color: $primary-color;
+    background-color: $darkgrey-color;
     width:100%;
     color: $white-color;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    
+
+    p{
+        opacity: 0.3;
+    }
 }
 
