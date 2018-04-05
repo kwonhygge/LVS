@@ -65,9 +65,12 @@ justify-content: space-between;
 // }
 
 .medium-icons{
-    font-size: 30px;
-    padding-right: 5px;
+    padding-right: 10px;
+    font-size: 1.5rem;
     color: $white-color;
+    &:hover{
+        color: $cta-color;
+    }
 }
 
 
