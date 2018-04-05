@@ -65,6 +65,9 @@ header{
 
 .banner-container{
     @include max-width-center;
+    h1{
+
+    }
     p{
         margin-bottom: 2.1rem;
         line-height: 1.8rem;
@@ -199,13 +202,15 @@ header{
 }
 .video-container{
     @include max-width-center;
+    margin-bottom: 2rem;
     .video{
         color: $white-color;
         position: relative;
         .video-text-wrapper{
             position: absolute;
             top: 0;
-            h2{
+            h2, p{
+                display: none;
                 margin: 0;
             }
         }
@@ -214,6 +219,48 @@ header{
 .news-container{
     @include max-width-center;
 }
+
+.text-wrapper{
+    h2{
+        margin: 0 0 1.25rem 0; 
+    }
+    p{
+        line-height: 1.8rem;
+        margin-bottom: 2.1rem;
+    }
+
+}
+
+.news-box{
+    margin-top: 2.1rem;
+    position: relative;
+    img{
+        border-radius: $radius;
+    }
+}
+
+.news-text{
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    color: $white-color;
+    font-size: 0.9rem;
+    h4{
+        margin: 0.9rem 0;
+    }
+    span{
+        border-radius: 5px;
+        background-color: $cta-color;
+        padding: 0.5rem 0.9rem;
+    }
+    a{
+        color: $white-color;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+}
+
+
 
 //Testimonial Section
 .testimonials{
@@ -286,22 +333,9 @@ header{
     }
 }
 
-.social-links{
-    a{
-        font-size: 1.5rem;
-        padding: 0.6rem;
-        display: inline-flex;
-        text-decoration: none;
-        &:hover{
-            color: $cta-color;
-        }
-    }
-}
-
 //Form Element - Style
-input[type="email"],
-textarea,
-select {
+.newsletter-form
+    {
     border: none;
     border-bottom-width: medium;
     border-bottom-style: none;
@@ -321,6 +355,25 @@ select {
     }
 }
 
+input[type=submit] {
+    border:none;
+    margin: 1.5rem 0;
+    background-color: $cta-color;
+    border-radius: 50px;
+    padding: 1.1rem 3.75rem;
+}
+
+.social-links{
+    a{
+        font-size: 1.5rem;
+        padding: 0.6rem;
+        display: inline-flex;
+        text-decoration: none;
+        &:hover{
+            color: $cta-color;
+        }
+    }
+}
 
 //Sponsor Section
 .spons{
