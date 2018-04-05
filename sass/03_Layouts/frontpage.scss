@@ -13,7 +13,11 @@
 }
 
 .banner-container{
-    @include max-width-center;
+    width: 90%;
+    margin: 0 auto;
+    h1{
+        font-size: 2.5rem;
+    }
     p{
         margin-bottom: 2.1rem;
     }
@@ -134,6 +138,7 @@
     .project-info{
         margin-bottom: 3.1rem;
         h2{
+            margin: 0px 0 20px 0;
             font-size: 1.9rem;
         }
         p{
@@ -163,6 +168,7 @@
 }
 .news-container{
     @include max-width-center;
+    margin-top: 3.1rem;
 }
 
 .text-wrapper{
@@ -237,6 +243,7 @@
     padding: 30px;
     margin-bottom: 35px;
         p{
+            font-style: italic;
             margin: 0 0 25px 0;
         }
         h4{
@@ -274,8 +281,7 @@
 
 //Form Element - Style
 
-.newsletter-form
- {
+.newsletter-input{
     border: none;
     border-bottom-width: medium;
     border-bottom-style: none;
@@ -299,8 +305,6 @@
 .button-form{
     border:none;
     margin: 1.5rem 0;
-    background-color: $cta-color;
-    border-radius: 50px;
     padding: 1.1rem 3.75rem;
 }
 
@@ -330,24 +334,107 @@
         &:nth-child(1), &:nth-child(2){
                 margin-bottom: 25px;
             }
+            img{
+                width: 180px;
+            }
         }
     }
 }
 
-/**		MEDIA QUERY - Tablet lille og på højkant 		**/  
+/**		MEDIA QUERY - Tablet lille og på højkant 		**/
+
 
 @media only screen and (min-width: 768px) {
+
+    .banner-container{
+        h1{
+            margin: 0 0 1.5rem 0;
+            font-size: 3.1rem;
+            line-height: 4rem;
+        }
+    }
+
     .card-wrapper {
         margin-top: 35px;
         display: flex;
         justify-content: space-between;
 
         .card-box{
-            width: 31%;
+            width: 32%;
             margin-bottom: 0;
         }
     }
 
+    .projects{
+        .projects-container{
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+        }
+        .projects-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            order: 1;
+                div{
+                    width: 45%;
+                    text-align: center; 
+                }
+        }
+        .project-info{
+            margin-bottom: 0;
+            width: 45%;
+            h2{
+                font-size: 1.9rem;
+            }
+            p{
+                margin-bottom: 2.1rem;
+            }
+        }
+    }
+
+//News section
+    .news-box-wrapper{
+        display: flex;
+        justify-content: space-between;
+        .news-box{
+            width: 32%;
+        }
+    }
+
+
+//Newsletter Section
+    .newsletter-container{
+        max-width: 650px;
+        h2{
+           font-size: 1.9rem; 
+        }
+    }
+
+    .signup-form{
+        display: flex;
+        width: 100%;
+        margin: 45px 0;
+    }
+
+    .newsletter-input{
+        text-align: left;
+        margin-right: 25px;
+    }
+
+    .button-form{
+        margin: 0;
+    }
+
+//Testimonials
+    .slider-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .box-wrapper{
+        width: 32%;
+    }
 
     
 //Sponsor Section
@@ -372,16 +459,54 @@
 
 @media only screen and (min-width: 1200px) {
 
+    .banner-container{
+        width: 1200px;
+        margin: 0 auto;
+        p{
+            margin-bottom: 2.1rem;
+        }
+        a{
+            color: $white-color;
+            text-decoration: none;
+        }
+    }
+
     .cards{
         padding: 110px 0px;
         .cards-container{
             max-width: 1200px;
             text-align: center;
             h2{
+                font-size: 1.9rem;
                 margin: 0px 0 20px 0;
             }
             p{
                 line-height: 1.8rem;   
+            }
+        }
+    }
+
+    .about{
+        padding-top: 110px;
+        background-color: $light-grey;
+        .about-container{
+            max-width: 1200px;
+            margin-bottom: 50px;
+            h2{
+                font-size: 3.1rem;
+                line-height: 4rem;
+            }
+            span{
+                line-height: 1.6rem;
+                margin-bottom: 1.25rem;
+                display: block;
+                color: $primary-color;
+                font-style: italic;
+                font-weight: bold;
+            }
+            p{
+                margin-bottom: 2.1rem;
+                line-height: 1.8rem;
             }
         }
     }
@@ -391,33 +516,51 @@
         padding: 140px 0;
         .projects-container{
            max-width: 1200px;
-           display: flex;
-           justify-content: space-between;
-           align-items: center;
         }
         .projects-wrapper{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            order: 1;
                 div{
-                    width: 45%;
-                    text-align: center; 
+                    width: 50%;
                     h4{
                         font-size: 8rem;
                     }
                 }
         }
         .project-info{
-            margin-bottom: 0;
             width: 35%;
             h2{
-                font-size: 1.9rem;
-            }
-            p{
-                margin-bottom: 2.1rem;
+                font-size: 3.1rem;
+                line-height: 4rem;
             }
         }
+    }
+
+    .testimonials-container{
+        h2{
+            font-size: 1.9rem;
+        }
+    }
+
+    .video-container{
+        max-width: 950px;
+    }
+
+     .news-container{
+        max-width: 1200px;
+    }
+
+    .spons{
+        .spons-container{
+            max-width: 1200px;
+        }
+    }
+
+    .slider-wrapper{
+        max-width: 1200px;
+        margin: 50px auto 0 auto;
+    }
+
+    .newsletter{
+        padding: 140px 0px;
     }
 	
 }
