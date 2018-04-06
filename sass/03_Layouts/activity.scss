@@ -149,11 +149,22 @@
 
 
 //SINGLE ACTIVITY PAGE SCSS
+.breadcrumb{
+    margin:40px 0;
+    
+    .container{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto; 
+    }
+}
+
 .activity-container{
+    width: 90%;
     display: flex;
     justify-content: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin: 0 auto;
 
     // RIGHT SIDE CONTENT
     #overlay{
@@ -286,6 +297,11 @@
         margin: 0 auto;
 
         
+    }
+
+    .activity-container{
+        width: 1200px;
+        margin: 0 auto;
     }
     
 
