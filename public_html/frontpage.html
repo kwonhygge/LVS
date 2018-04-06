@@ -32,7 +32,7 @@
                 <span id="mobilemenu" class="fas fa-bars"></span>
             </div>
             <a class="logo" href="frontpage.html"><img src="../img/main_logo_lvs.png" alt=""></a>
-            <ul>
+            <ul id="navElements">
                 <li><a href="frontpage.html">Forside</a></li>
                 <li><a href="Whois.html">Om os <i class="fas fa-sort-down"></i></a></li>
                 <li><a href="activitycalender.html">Aktiviteter</a></li>
@@ -291,6 +291,36 @@
 <div class="copyright-footer">
     <p>Copyright &#169; 2018 Group 1 Inc. All rights reserved.</p>
 </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(e) {
+	var navOpen = 0;
+	
+    $("#mobilemenu").click(function(e) {
+		if(navOpen == 1) {
+			$("#navElements").slideUp(200);	
+			navOpen = 0;
+		} else {
+			$("#navElements").slideDown(200);	
+			navOpen = 1;
+		}
+    });
+	
+	$(window).resize(function(e) {
+        var width = $(window).width();
+		
+		if(width > 767) {
+			$("#navElements").css({"display":"webkit-flex", "display":"flex"});	
+		} else {
+			$("#navElements").css("display", "none");
+			navOpen = 0;
+		}
+    });
+});
+</script>
 
 </body>
 </html>
