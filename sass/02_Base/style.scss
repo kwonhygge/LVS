@@ -47,6 +47,15 @@ p{
     box-shadow: $shadow;
 }
 
+.y20{
+    transition: all 300ms;
+
+    &:hover{
+        transform: translateY(-20px);
+    }
+}
+
+
 .cta-button{
     @include border-radius($radius50);
     box-shadow: $shadowsmall;

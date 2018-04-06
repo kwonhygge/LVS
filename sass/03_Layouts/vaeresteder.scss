@@ -40,6 +40,12 @@ body > div.grid > div > div:nth-child(n) > div > ul > li:nth-child(n) > p {
     line-height: 2rem;
 }
 
+.category-filter {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+}
+
 @media only screen and (max-device-width: 767px) {
     .site-footer, .copyright-footer {
       display: none;
