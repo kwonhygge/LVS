@@ -1,3 +1,27 @@
+//colors
+$color_mountain_meadow_approx: #2dca73;
+$white: #ffffff;
+$black: black;
+$gray: gray;
+$color_cream_can_approx: #f0c45c;
+
+//fonts
+$font_0: Roboto;
+
+//urls
+$url_0: url(https://imageshack.com/a/img924/386/K4JSb6.png);
+
+* {
+	font-family: $font_0;
+}
+p {
+	font-weight: 200;
+	line-height: 25px;
+}
+h4 {
+	font-weight: 300;
+	line-height: 59px;
+}
 .header-container {
 	border-bottom: 1px solid $color_mountain_meadow_approx;
 	display: flex;
