@@ -115,7 +115,8 @@ div.contactContainer > div.form > form > input[type="submit"] {
     background-color: $cta-color;
     border: 0;
     color: #fff;
-    width: 8vw;
+    width: 150px;
+    border-radius: $radius50;
 }
 
 

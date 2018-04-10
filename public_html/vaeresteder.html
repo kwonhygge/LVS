@@ -29,7 +29,7 @@
                 <span id="mobilemenu" class="fas fa-bars"></span>
             </div>
             <a class="logo" href="frontpage.html"><img src="../img/main_logo_lvs.png" alt=""></a>
-            <ul>
+            <ul id="navElements">
                 <li><a href="frontpage.html">Forside</a></li>
                 <li><a href="Whois.html">Om os <i class="fas fa-sort-down"></i></a></li>
                 <li><a href="activitycalender.html">Aktiviteter</a></li>
@@ -65,7 +65,15 @@
 
     <!-- <input type="text" id="mixInput" placeholder="Type here"> -->
 </div>
-</div>        
+</div> 
+
+<div class="filter-btn-mobile">
+
+    <div class="filter-logo close"></div>
+
+  </div>
+
+
 <div class="grid">
     
 <div class="vaerestederContainer page-container">
@@ -193,9 +201,11 @@
 
 
 
-    <!-- mix it up -->
-
-<script type='text/javascript' src="../js/mixitup.min.js"></script>    
+   
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script><script type='text/javascript' src="../js/mixitup.min.js"></script>    
+<script type='text/javascript' src="../js/javascript.js"></script>    
+ <!-- mix it up -->
 <script>
 // var containerEl = document.querySelector('.vaerestederContainer');
 var mixer = mixitup('.grid');
@@ -209,6 +219,19 @@ var targetSelector = '.mix';
           duration: 200
         }
       });
+</script>
+<script>
+    
+
+// mobile button for filtering væresteder
+$(function() {
+    $(".filter-btn-mobile").click(function() {
+        $(".category-filter").toggleClass('flex');
+        $(".close").toggleClass('filter-logo');
+        $(".close").toggleClass('btn-active');
+        $(".siteInfo").toggleClass('none');
+    });
+});
 </script>
 
 <!-- text field mixitup -->

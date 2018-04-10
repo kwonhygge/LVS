@@ -112,19 +112,19 @@
             </div>
             <div class="projects-wrapper">
                 <div>
-                    <h4>123</h4>
+                    <h4 class="count">123</h4>
                     <p>Væresteder</p>
                 </div>
                 <div>
-                    <h4>35</h4>
+                    <h4 class="count">35</h4>
                     <p>Årlige aktiviteter</p>
                 </div>
                 <div>
-                    <h4>321</h4>
+                    <h4 class="count">321</h4>
                     <p>Frivillige hjælpere</p>
                 </div>
                 <div>
-                    <h4>211</h4>
+                    <h4 class="count">211</h4>
                     <p>Igangsatte projekter</p>
                 </div>
             </div>
@@ -293,35 +293,8 @@
 </div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script type="text/javascript">
-
-$(document).ready(function(e) {
-    // $("#navElements").css("display", "none");
-	var navOpen = 0;
-	
-    $("#mobilemenu").click(function(e) {
-		if(navOpen == 1) {
-			$("#navElements").slideUp(200);	
-			navOpen = 0;
-		} else {
-			$("#navElements").slideDown(200);	
-			navOpen = 1;
-		}
-    });
-	
-	$(window).resize(function(e) {
-        var width = $(window).width();
-		
-		if(width > 767) {
-			$("#navElements").css({"display":"webkit-flex", "display":"flex"});	
-		} else {
-			$("#navElements").css("display", "none");
-			navOpen = 0;
-		}
-    });
-});
-</script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="../js/javascript.js"></script>
 
 </body>
 </html>
