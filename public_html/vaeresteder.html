@@ -47,19 +47,25 @@
 
         
 
-<div class="category-filter wrapper">
-        <label class="switch" for="sjaelland_checkbox"><input type="checkbox" id="sjaelland_checkbox" class="control sjaelland" data-toggle=".sjaelland">
-        <div class="slider round"> <p>Sjælland</p> </div></label>
 
-        <label class="switch" for="fyn_checkbox"><input type="checkbox" id="fyn_checkbox" class="control fyn" data-toggle=".fyn">
-        <div class="slider round"> <p>Fyn</p> </div></label>
-        
-        <label class="switch" for="jylland_checkbox"><input type="checkbox" id="jylland_checkbox" class="control jylland" data-toggle=".jylland">
-        <div class="slider round"> <p>Jylland</p> </div></label>
+<div class="page-container filter_info">
+<div class="siteInfo">
+    <h5>Forside - <span style="color:#2DCA73">Væresteder</span></h5>
+    <h3><span style="font-size: 30px">Væresteder</span></h3>
 </div>
-        
-<h5>Forside - <span style="color:#2DCA73">Væresteder</span></h5>
-                <h3><span style="font-size: 30px">Væresteder</span></h3>
+<div class="category-filter wrapper">
+    <label class="switch" for="sjaelland_checkbox"><input type="checkbox" id="sjaelland_checkbox" class="control sjaelland" data-toggle=".sjaelland">
+    <div class="slider round"> <p class="byNavn">Sjælland</p> </div></label>
+
+    <label class="switch" for="fyn_checkbox"><input type="checkbox" id="fyn_checkbox" class="control fyn" data-toggle=".fyn">
+    <div class="slider round"> <p class="byNavn">Fyn</p> </div></label>
+    
+    <label class="switch" for="jylland_checkbox"><input type="checkbox" id="jylland_checkbox" class="control jylland" data-toggle=".jylland">
+    <div class="slider round"> <p class="byNavn">Jylland</p> </div></label>
+
+    <!-- <input type="text" id="mixInput" placeholder="Type here"> -->
+</div>
+</div>        
 <div class="grid">
     
 <div class="vaerestederContainer page-container">
@@ -74,6 +80,7 @@
                     <li><p><strong>Email</strong> &middot; <a href="mailto:lvsinfo@lavs.dk?Subject=Kontakt%20LVS%20Site">lvsinfo@lavs.dk</a></p></li>
                     <li><p><strong>Telefon</strong> &middot; <a href="tel:+4575924000">+45 7592 4000</a></p></li>
                     <li><p><strong>Adresse</strong> &middot; <a href="https://www.google.com/maps?ll=55.567378,9.754122&z=16&t=m&hl=en-US&gl=DK&mapclient=embed&cid=1894542937537147434">Danmarksgade 6A, 1. <br> 7000 Fredericia</a></p></li>
+                    <p class="postnr" style="display: none">7000</p>
                 </ul>
             </div>
     </div>
@@ -191,20 +198,66 @@
 <script type='text/javascript' src="../js/mixitup.min.js"></script>    
 <script>
 // var containerEl = document.querySelector('.vaerestederContainer');
-var mixer = mixitup('.vaerestederContainer');
+var mixer = mixitup('.grid');
 var targetSelector = '.mix';
 
-    var mixer = mixitup('.vWrapper', {
+    var mixer = mixitup('.vaerestederContainer', {
         selectors: {
           target: targetSelector
         },
         animation: {
           duration: 200
-        },
-        controls: {
-          toggleLogic: 'and'
         }
       });
 </script>
+
+<!-- text field mixitup -->
+<!-- <script>
+    $(function() {
+
+$(".vaerestederContainer").mixItUp();
+
+var inputText;
+var $matching = $();
+
+// Delay function
+var delay = (function(){
+  var timer = 0;
+  return function(callback, ms){
+    clearTimeout (timer);
+    timer = setTimeout(callback, ms);
+  };
+})();
+
+$("#mixInput").keyup(function(){
+  // Delay function invoked to make sure user stopped typing
+  delay(function(){
+    inputText = $("#mixInput").val().toLowerCase();
+    
+    // Check to see if input field is empty
+    if ((inputText.length) > 0) {            
+      $( '.mix').each(function() {
+        $this = $("this");
+        
+         // add item to be filtered out if input text matches items inside the title   
+         if($(this).children('.postnr').text().toLowerCase().match(inputText)) {
+          $matching = $matching.add(this);
+        }
+        else {
+          // removes any previously matched item
+          $matching = $matching.not(this);
+        }
+      });
+      $(".vaerestederContainer").mixItUp('filter', $matching);
+    }
+
+    else {
+      // resets the filter to show all item if input is empty
+      $(".vaerestederContainer").mixItUp('filter', 'all');
+    }
+  }, 200 );
+});
+})
+</script> -->
 </body>
 </html>
