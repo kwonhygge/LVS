@@ -12,17 +12,6 @@
 // });
 
 
-// // mobile button for filtering væresteder
-// $(function() {
-//     $(".filter-btn-mobile").click(function() {
-//         $(".filter_info").toggleClass('category-filter-active');
-//         $(".close").toggleClass('filter-logo');
-//         $(".close").toggleClass('btn-active');
-//         $(".filter-btn-mobile").toggleClass('color-change');
-//         $(".vaerestederContainer").toggleClass('none');
-//     });
-// });
-
 // BURGER NAV
 
 
