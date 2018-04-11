@@ -13,8 +13,6 @@
 
 
 // BURGER NAV
-
-
 $(document).ready(function(e) {
 	var navOpen = 0;
 	
