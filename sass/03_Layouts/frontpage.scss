@@ -16,7 +16,7 @@
     width: 90%;
     margin: 0 auto;
     h1{
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         font-weight: $semibold;
         line-height: 3rem;
         font-weight: bold;
@@ -41,7 +41,7 @@
             margin: 0px 0 20px 0;
         }
         p{
-            line-height: 1.8rem;   
+            line-height: 1.8rem;  
         }
     }
 }
@@ -66,6 +66,7 @@
             }
             p{
                 margin: 0.9rem 0;
+                font-size: 1rem;
             }
             a{
                 color: $darkgrey-color;
@@ -153,6 +154,7 @@
         }
         p{
             margin-bottom: 2.1rem;
+            font-size: 1rem;
         }
     }
 }
@@ -250,6 +252,9 @@
         color: $white-color;
         text-decoration: none;
         font-size: 0.9rem;
+        &:hover{
+            color: $cta-color;
+        }
     }
 }
 
@@ -290,6 +295,7 @@
         p{
             font-style: italic;
             margin: 0 0 25px 0;
+            font-size: 1rem;
         }
         h4{
             margin: 0;
@@ -354,7 +360,6 @@
     background-color: transparent;
     border-bottom: 1px solid #9F9F9F;
     color: $white-color;
-    text-align: center;
   &:focus{
     border-bottom: 1px solid $primary-color;
     }
