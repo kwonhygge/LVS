@@ -1,6 +1,5 @@
 
-//Main Banner Section
-
+//Hero Section begins
 .banner{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/Banner.jpg);
 	background-position: center;
@@ -30,8 +29,7 @@
     }
 }
 
-//CTA Section
-
+//CTA Section begins
 .cards{
     padding: 75px 0px;
     .cards-container{
@@ -83,8 +81,7 @@
     }
 }
 
-//About Section
-
+//About Section begins
 .about{
     padding-top: 75px;
     background-color: $light-grey;
@@ -107,9 +104,6 @@
             margin-bottom: 2.1rem;
             line-height: 1.8rem;
         }
-        img{
-            margin-bottom: -5px;
-        }
     }
 }
 
@@ -117,8 +111,11 @@
     margin-bottom: 45px;
 }
 
-//Projects Section
+.about-img{
+    margin-bottom: -4px; 
+}
 
+//Projects Section begins
 .projects{
     background-image: linear-gradient(rgba(45, 202, 115, 0.95), rgba(45, 202, 115, 0.95)), url(../img/project_bg.jpg);
     background-position: center;
@@ -159,8 +156,7 @@
     }
 }
 
-//News & Video
-
+//News & Video Section begins
 .news{
     padding: 75px 0;    
 }
@@ -258,8 +254,7 @@
     }
 }
 
-//Testimonial Section
-
+//Testimonial Section begins
 .testimonials{
     background-color: $primary-color;
     padding: 75px 0;
@@ -315,8 +310,7 @@
     clear: both;
 }
 
-//Newsletter Section
-
+//Newsletter Section begins
 .newsletter{
     padding: 75px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/newsletter-bg.jpg);
@@ -344,7 +338,6 @@
 }
 
 //Form Element - Style
-
 .newsletter-input{
     border: none;
     border-bottom-width: medium;
@@ -383,7 +376,7 @@
     }
 }
 
-//Sponsor Section
+//Sponsor Section begins
 .spons{
     padding: 35px 0;
     background-color: $light-grey;
@@ -402,10 +395,9 @@
 }
 
 /**		MEDIA QUERY - Tablet lille og på højkant 		**/
-
-
 @media only screen and (min-width: 768px) {
 
+// Hero
     .banner-container{
         h1{
             margin: 0 0 1.5rem 0;
@@ -417,6 +409,7 @@
         }
     }
 
+// CTA Section begins
     .card-wrapper {
         margin-top: 35px;
         display: flex;
@@ -428,7 +421,11 @@
         }
     }
 
+// About Section begins
     .about{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
         .about-container{
             h2{
                 font-size: 2.9rem;
@@ -437,6 +434,11 @@
         }
     }
 
+    .about-img{
+        width: 70%;
+    }
+
+// Projects Section begins
     .projects{
         .projects-container{
            display: flex;
@@ -466,6 +468,7 @@
         }
     }
 
+//Video & News Section begins
     .video-container {
         height: 565px;
         flex-direction: row;
@@ -512,8 +515,6 @@
         }
     }
 
-
-//Newsletter Section
     .newsletter-container{
         max-width: 650px;
         h2{
@@ -536,7 +537,7 @@
         margin: 0;
     }
 
-//Testimonials
+//Testimonials Section begins
     .slider-wrapper{
         display: flex;
         justify-content: space-between;
@@ -547,7 +548,6 @@
         margin-bottom: 0;
     }
 
-    
 //Sponsor Section
     .spons{
         padding: 50px 0;
@@ -562,14 +562,13 @@
                 }
             }
         }
-    }
-    
+    } 
 }
 
 /**		MEDIA QUERY - Computer 		**/ 
-
 @media only screen and (min-width: 1200px) {
 
+//Hero Section begins
     .banner-container{
         width: 1200px;
         margin: 0 auto;
@@ -585,6 +584,7 @@
         }
     }
 
+// CTA Section begins
     .cards{
         padding: 110px 0px;
         .cards-container{
@@ -600,18 +600,21 @@
         }
     }
 
+// About Section begins
     .about{
         background-image: url(../img/about_bg.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        padding-top: 110px;
+        position: relative;
+        justify-content: center;
+        padding-top: 0px;
         background-color: $light-grey;
+        height: 1000px;
         .about-container{
             display: flex;
             align-items: center;
-            max-width: 1450px;
-            margin-left: auto;
-            margin-right: 0;
+            max-width: 1200px;
+            margin: 0 auto;
             h2{
                 font-size: 3.1rem;
             }
@@ -619,9 +622,18 @@
     }
 
     .about-text-wrapper{
-        flex: 1;
+        width: 40%;
+        margin-bottom: 0px;
     }
 
+    .about-img{
+        width: 45%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+// Project Section begins
     .projects{
         padding: 140px 0;
         .projects-container{
@@ -643,20 +655,12 @@
             }
         }
     }
-    .testimonials{
-        padding: 100px 0px;
-    }
-    .testimonials-container{
-        h2{
-            font-size: 1.9rem;
-        }
-    }
 
+//Video & News Section begins
     .video-container{
         max-width: 950px;
     }
 
-    //News section
     .news{
         padding: 100px 0px;
     }
@@ -677,6 +681,16 @@
             h2{
                font-size: 1.9rem; 
             }
+        }
+    }
+
+//Testimonials Section begins
+    .testimonials{
+        padding: 100px 0px;
+    }
+    .testimonials-container{
+        h2{
+            font-size: 1.9rem;
         }
     }
 
