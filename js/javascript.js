@@ -37,3 +37,17 @@ $(document).ready(function(e) {
 		}
     });
 });
+
+//ACTIVITY LIST/GALLERY VIEW
+
+$("#list-button").click(function(){
+	$("#gallery-view").hide();
+	$("#list-view").show();
+	
+});
+
+$("#gallery-button").click(function(){
+	$("#gallery-view").show();
+	$("#list-view").hide();
+	
+}); 
