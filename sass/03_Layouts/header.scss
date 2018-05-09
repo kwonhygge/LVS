@@ -57,13 +57,19 @@ header{
     }
         li{
             padding: 15px 0px;
-            a{
+            // Bliver brugt til Umbraco - Active nav links
+            a.nav-link{
                 color: $darkgrey-color;
                 text-decoration: none;
                 font-weight: $semibold;
                 &:hover{
-                    color: $primary-color; 
-                 }
+                    color: $primary-color;
+                }
+            }
+
+            .active{
+                color: $primary-color;
+                text-decoration: none;
             }
         }
     }
