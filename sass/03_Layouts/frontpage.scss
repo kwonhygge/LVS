@@ -153,7 +153,6 @@
         }
         p{
             margin-bottom: 2.1rem;
-            font-size: 1rem;
         }
     }
 }
@@ -388,6 +387,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         div{
+            text-align: center;
             width: 45%;
         &:nth-child(1), &:nth-child(2){
                 margin-bottom: 25px;
@@ -441,34 +441,33 @@
     }
 
 // Projects Section begins
-    .projects{
-        .projects-container{
-           display: flex;
-           justify-content: space-between;
-           align-items: center;
-        }
-        .projects-wrapper{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            order: 1;
-                div{
-                    width: 45%;
-                    text-align: center; 
-                }
-        }
-        .project-info{
-            margin-bottom: 0;
-            width: 45%;
-            h2{
-                font-size: 2.9rem;
-                line-height: 3.5rem;
+    .projects-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .projects-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        order: 1;
+            .count{
+                width: 45%;
+                text-align: center; 
             }
-            p{
-                margin-bottom: 2.1rem;
-            }
+    }
+    .project-info{
+        margin-bottom: 0;
+        width: 45%;
+        h2{
+            font-size: 2.9rem;
+            line-height: 3.5rem;
+        }
+        p{
+            margin-bottom: 2.1rem;
         }
     }
+
 
 //Video & News Section begins
     .video-container {
@@ -642,7 +641,7 @@
            max-width: 1200px;
         }
         .projects-wrapper{
-                div{
+                .count{
                     width: 50%;
                     h4{
                         font-size: 8rem;
