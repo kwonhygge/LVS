@@ -30,6 +30,21 @@ body {
     
 }
 
+.siteInfo {
+    display: flex;
+    max-width: 100%;
+    margin: 0% -43% 0% 1%;
+    e
+}
+
+.h1banner {
+    color: #fff;
+    top: 150px;
+    Z-INDEX: 99;
+    HEIGHT: 0PX;
+}
+
+
 .container {
   display: flex;
   justify-content: center;
@@ -171,6 +186,25 @@ ul > li > p > a{
     display: none;
   }
 }
+
+@media only screen and (max-device-width: 767px) {
+    .site-footer, .copyright-footer, .siteInfo, .header {
+        display: none;
+    }
+
+    .h1banner {
+        display: none;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .flex {
+        display: flex;
+    }
+}
+
 
 
 /* iphone 5 */
