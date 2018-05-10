@@ -1,5 +1,6 @@
 
 //Hero Section begins
+/*
 .banner{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/Banner.jpg);
 	background-position: center;
@@ -14,6 +15,37 @@
 .banner-container{
     width: 90%;
     margin: 0 auto;
+}
+*/
+
+.banner{
+    height: 50vh;
+    position: relative;
+    img{
+        display: block;
+        height: 100%;
+        background-position: center;
+    }
+}
+
+.banner-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(34, 34, 34, 0.35), rgba(34, 34, 34, 0.35));
+}
+
+.banner-container{
+    color: $white-color;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.banner-text-wrapper{
     h1{
         font-size: 2.4rem;
         font-weight: $semibold;
@@ -55,6 +87,7 @@
     }
     img{
         border-radius: 10px 10px 0 0;
+        display: block;
     }
 }
 
@@ -162,7 +195,7 @@
 .news{
     padding: 75px 0;    
 }
-.video-container{
+/*.video-container{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/video_img.jpg);
     background-position: center;
 	background-size: cover;
@@ -205,10 +238,10 @@
         text-decoration: none;
     }
 }
+*/
 
 .news-container{
     @include max-width-center;
-    margin-top: 4.6rem;
 }
 
 .text-wrapper{
@@ -401,6 +434,10 @@
 @media only screen and (min-width: 768px) {
 
 // Hero
+    .banner{
+        height: 80vh;
+    }
+
     .banner-container{
         h1{
             margin: 0 0 1.5rem 0;

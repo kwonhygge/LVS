@@ -30,9 +30,13 @@
 
 .vaerested1 {
     margin: 40px;
-
     h2 {
         text-align: center;
+        font-size: 1.1rem;
+        font-weight: $semibold;
+    }
+    span{
+        font-weight: $semibold;
     }
 }
 
