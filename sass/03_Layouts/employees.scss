@@ -5,6 +5,7 @@
 }
 
 .employee-box{
+    width: 100&;
     margin-bottom: 35px;
     &:last-child{
         margin-bottom: 0px;
@@ -15,10 +16,12 @@
     position: relative;
     img{
         display: block;
+        border-radius: 10px 10px 0 0;
     }
 }
 
 .text-overlay{
+    border-radius: 10px 10px 0 0;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -62,14 +65,15 @@
         height: 1px;
         content: "";
         display: inherit;
-        background-color: $darkgrey-color;
+        background-color: #f3f3f3;
         transform: translateX(-50%);
     }
     &:hover{
+        border-radius: 0 0 10px 10px;
         background-color: $cta-color;
         color: $white-color;
         &::before{
-            display: none;
+            background-color: transparent;
         }
     }
 }
@@ -82,16 +86,15 @@
         justify-content: space-between;
     }
 
-}
-
-.employee-box{
-    &:last-child{
-        margin-bottom: 35px;
+    .employee-box{
+        &:last-child{
+            margin-bottom: 35px;
+        }
     }
-}
-
-.employee-box{
-    width: 32%;
+    
+    .employee-box{
+        width: 32%;
+    }
 }
 
 @media only screen and (min-width: 1200px) {

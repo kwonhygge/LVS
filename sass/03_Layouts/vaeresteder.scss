@@ -39,9 +39,6 @@
 body > div.grid > div > div:nth-child(n) > div > ul > li:nth-child(n) > p {
     line-height: 2rem;
 }
-.siteInfo {
-padding-top: 35px;
-}
 
 div.siteInfo > h1 {
 position: absolute;
@@ -59,7 +56,6 @@ color: #fff;
     margin-left: auto;
     justify-content: space-around;
     align-items: center;
-    margin-top: 35px;
     height: 70px;
 }
 
@@ -120,6 +116,8 @@ color: #fff;
   .filter_info {
       display: flex;
       flex-direction: row;
+      align-items: center;
+      margin-top: 30px;
   }
 
   .byNavn {
