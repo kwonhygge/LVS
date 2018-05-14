@@ -58,8 +58,17 @@ a{
         transform: translateY(-10px);
         box-shadow: 0 20px 40px 0 rgba(0,0,0,0.1);
     }
+    
 }
 
+.y5{
+    transition: all 300ms;
+
+    &:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px 0 rgba(0,0,0,0.1);
+    }
+}
 
 .cta-button{
     @include border-radius($radius50);
@@ -79,6 +88,3 @@ a{
         box-shadow: $shadow;
     }
 }
-
-  
- 
