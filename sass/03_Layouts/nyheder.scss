@@ -1,47 +1,23 @@
-
-.employees-container{
+.nyheder-container{
     width: 90%;
     margin: 35px auto 0;
 }
 
-.employee-box{
-    width: 100&;
+.nyheder-box{
     margin-bottom: 35px;
     &:last-child{
         margin-bottom: 0px;
     }
 }
 
-.overlay-wrapper{
-    position: relative;
-    img{
-        display: block;
-        border-radius: 10px 10px 0 0;
-    }
-}
-
-.text-overlay{
-    border-radius: 10px 10px 0 0;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: linear-gradient(rgba(34, 34, 34, 0.35), rgba(34, 34, 34, 0.35));
-    color: $white-color;
-    h3{
-        margin: 0;
-    }
-}
-
-.employee-info{
+.nyheder-info{
     position: absolute;
     bottom: 25px;
     left: 35px;
     right: 35px;
 }
 
-.employee-body{
+.nyheder-body{
     text-align: center;
     p{
         font-size: 1rem;
@@ -49,10 +25,9 @@
     }
 }
 
-.employee-btn{
+.nyheder-btn{
     i{
         margin-right: 10px;
-        transform: rotate(90deg);
     }
     display: block;
     padding: 25px 0;
@@ -81,27 +56,26 @@
 
 @media only screen and (min-width: 768px) {
 
-    .employees-container{
+    .nyheder-container{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    .employee-box{
+    .nyheder-box{
         &:last-child{
             margin-bottom: 35px;
         }
     }
     
-    .employee-box{
+    .nyheder-box{
         width: 32%;
     }
 }
 
 @media only screen and (min-width: 1200px) {
 
-        .employees-container{
+        .nyheder-container{
             max-width: 1200px;
         }
 }
-
