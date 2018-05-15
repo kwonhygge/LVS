@@ -1,17 +1,21 @@
 /*
 Error: Undefined variable: "$white-color".
-        on line 2 of C:\gitProjects\LVS\sass\02_Base\style.scss
+        on line 31 of C:\gitProjects\LVS\sass\03_Layouts\employees.scss
 
-1: body{
-2:     background-color: $white-color;
-3:     -webkit-text-size-adjust: 100%;  //fix for iOS
-4:     font-size: 1rem;
-5: }
-6: 
-7: //FONTS
+26:     top: 0;
+27:     bottom: 0;
+28:     left: 0;
+29:     right: 0;
+30:     background-image: linear-gradient(rgba(34, 34, 34, 0.35), rgba(34, 34, 34, 0.35));
+31:     color: $white-color;
+32:     h3{
+33:         margin: 0;
+34:     }
+35: }
+36: 
 
 Backtrace:
-C:\gitProjects\LVS\sass\02_Base\style.scss:2
+C:\gitProjects\LVS\sass\03_Layouts\employees.scss:31
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -58,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white-color\".\A         on line 2 of C:\gitProjects\LVS\sass\02_Base\style.scss\A \A 1: body{\A 2:     background-color: $white-color;\A 3:     -webkit-text-size-adjust: 100%;  //fix for iOS\A 4:     font-size: 1rem;\A 5: }\A 6: \A 7: //FONTS"; }
+  content: "Error: Undefined variable: \"$white-color\".\A         on line 31 of C:\gitProjects\LVS\sass\03_Layouts\employees.scss\A \A 26:     top: 0;\A 27:     bottom: 0;\A 28:     left: 0;\A 29:     right: 0;\A 30:     background-image: linear-gradient(rgba(34, 34, 34, 0.35), rgba(34, 34, 34, 0.35));\A 31:     color: $white-color;\A 32:     h3{\A 33:         margin: 0;\A 34:     }\A 35: }\A 36: "; }

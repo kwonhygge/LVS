@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$darkgrey-color".
-        on line 74 of C:\Users\Andreas\Documents\Web Development\Exame Project\LVS\sass\03_Layouts\contact.scss
+        on line 89 of C:\gitProjects\LVS\sass\03_Layouts\contact.scss
 
-69:             resize: none;
-70:             width: 100%;
-71:         }
-72: 
-73:         h3 {
-74:             color: $darkgrey-color;
-75:             margin-bottom: 0px;
-76:           }
-77:       }
-78: 
-79:       .wrapper {
+84:             resize: none;
+85:             width: 100%;
+86:         }
+87: 
+88:         h3 {
+89:             color: $darkgrey-color;
+90:             margin-bottom: 0px;
+91:           }
+92:       }
+93: 
+94:       .wrapper {
 
 Backtrace:
-C:\Users\Andreas\Documents\Web Development\Exame Project\LVS\sass\03_Layouts\contact.scss:74
+C:\gitProjects\LVS\sass\03_Layouts\contact.scss:89
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -84,4 +84,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$darkgrey-color\".\A         on line 74 of C:\Users\Andreas\Documents\Web Development\Exame Project\LVS\sass\03_Layouts\contact.scss\A \A 69:             resize: none;\A 70:             width: 100%;\A 71:         }\A 72: \A 73:         h3 {\A 74:             color: $darkgrey-color;\A 75:             margin-bottom: 0px;\A 76:           }\A 77:       }\A 78: \A 79:       .wrapper {"; }
+  content: "Error: Undefined variable: \"$darkgrey-color\".\A         on line 89 of C:\gitProjects\LVS\sass\03_Layouts\contact.scss\A \A 84:             resize: none;\A 85:             width: 100%;\A 86:         }\A 87: \A 88:         h3 {\A 89:             color: $darkgrey-color;\A 90:             margin-bottom: 0px;\A 91:           }\A 92:       }\A 93: \A 94:       .wrapper {"; }

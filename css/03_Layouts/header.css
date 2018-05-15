@@ -1,17 +1,21 @@
 /*
-Error: Undefined variable: "$white-color".
-        on line 2 of C:\gitProjects\LVS\sass\02_Base\style.scss
+Error: Undefined variable: "$primary-color".
+        on line 16 of C:\gitProjects\LVS\sass\03_Layouts\header.scss
 
-1: body{
-2:     background-color: $white-color;
-3:     -webkit-text-size-adjust: 100%;  //fix for iOS
-4:     font-size: 1rem;
-5: }
-6: 
-7: //FONTS
+11: }
+12: 
+13: //Header
+14: 
+15: header{
+16:     background-color: $primary-color;
+17: }
+18: 
+19: .header-container{
+20:     @include max-width-center;
+21:     justify-content: space-between;
 
 Backtrace:
-C:\gitProjects\LVS\sass\02_Base\style.scss:2
+C:\gitProjects\LVS\sass\03_Layouts\header.scss:16
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -58,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white-color\".\A         on line 2 of C:\gitProjects\LVS\sass\02_Base\style.scss\A \A 1: body{\A 2:     background-color: $white-color;\A 3:     -webkit-text-size-adjust: 100%;  //fix for iOS\A 4:     font-size: 1rem;\A 5: }\A 6: \A 7: //FONTS"; }
+  content: "Error: Undefined variable: \"$primary-color\".\A         on line 16 of C:\gitProjects\LVS\sass\03_Layouts\header.scss\A \A 11: }\A 12: \A 13: //Header\A 14: \A 15: header{\A 16:     background-color: $primary-color;\A 17: }\A 18: \A 19: .header-container{\A 20:     @include max-width-center;\A 21:     justify-content: space-between;"; }

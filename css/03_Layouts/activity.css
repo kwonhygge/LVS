@@ -1,24 +1,35 @@
 /*
 Error: Undefined variable: "$primary-color".
-        on line 31 of C:\Users\Andreas\Documents\Web Development\Exame Project\LVS\sass\03_Layouts\activity.scss
+        on line 31 of C:\gitProjects\LVS\sass\03_Layouts\activity.scss
 
-26:     width: auto;
-27:     align-self: flex-end;
-28: }
+26: .filter-view{
+27:     width: auto;
+28:     align-self: flex-end;
 29: 
-30: .month-bar{
-31:     background-color: $primary-color;
-32:     @include border-radius($radius);
-33:     box-shadow: $shadow;
-34:     padding: 20px 35px;
-35:     margin: 20px 0;
-36:     color: $white-color;
+30:     i{
+31:     color: $primary-color;
+32:     }
+33:     i:hover{
+34:         color: $lvs-color;
+35:         cursor: pointer;
+36:         }
 
 Backtrace:
-C:\Users\Andreas\Documents\Web Development\Exame Project\LVS\sass\03_Layouts\activity.scss:31
+C:\gitProjects\LVS\sass\03_Layouts\activity.scss:31
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -62,4 +73,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$primary-color\".\A         on line 31 of C:\Users\Andreas\Documents\Web Development\Exame Project\LVS\sass\03_Layouts\activity.scss\A \A 26:     width: auto;\A 27:     align-self: flex-end;\A 28: }\A 29: \A 30: .month-bar{\A 31:     background-color: $primary-color;\A 32:     @include border-radius($radius);\A 33:     box-shadow: $shadow;\A 34:     padding: 20px 35px;\A 35:     margin: 20px 0;\A 36:     color: $white-color;"; }
+  content: "Error: Undefined variable: \"$primary-color\".\A         on line 31 of C:\gitProjects\LVS\sass\03_Layouts\activity.scss\A \A 26: .filter-view{\A 27:     width: auto;\A 28:     align-self: flex-end;\A 29: \A 30:     i{\A 31:     color: $primary-color;\A 32:     }\A 33:     i:hover{\A 34:         color: $lvs-color;\A 35:         cursor: pointer;\A 36:         }"; }

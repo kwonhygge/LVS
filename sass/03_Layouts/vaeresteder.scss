@@ -12,7 +12,7 @@
 .vaerestederContainer {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 40px;
 
     .vWrapper {
@@ -154,6 +154,10 @@ color: #fff;
       width: 100%;
       height: 80px;
       margin-top: 15px;
+  }
+
+  .filter_info {
+      margin-top: 0px;
   }
 
   // toggles mobile
