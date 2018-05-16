@@ -88,3 +88,18 @@ a{
         box-shadow: $shadow;
     }
 }
+
+#overlayImg {
+    position: relative;
+}
+
+#overlayImg:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(66, 66, 66, 0.5);
+}
