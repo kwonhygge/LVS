@@ -114,6 +114,14 @@
             margin-bottom: 30px;
         }
     }
+
+    .info {
+        margin: 5px 20px;
+    }
+
+    .nyhed-sidebar{
+        display: flex;
+    } 
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
