@@ -83,12 +83,8 @@
     margin-bottom: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-top-color: $light-grey;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: $light-grey;
+    border-top: 1px solid $light-grey;
+    border-bottom: 1px solid $light-grey;
     h4{
         margin-top: 0;
     }
