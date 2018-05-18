@@ -81,6 +81,7 @@ body {
             border-radius: 5px;
             resize: none;
             width: 100%;
+            margin-bottom: 10px;
         }
 
         h3 {
@@ -109,6 +110,10 @@ body {
   P {
     line-height: 30px;
   }
+
+  span{
+    font-weight: $semibold;
+  }
 }
 
 ul {
@@ -121,33 +126,16 @@ hr {
   border-top: 0.5px solid #F3F3F3;
 }
 
-
-div.contactContainer > div.form > form > input[type="submit"] {
-    margin-top: 15px;
-    background-color: $cta-color;
-    border: 0;
-    color: #fff;
-    width: 150px;
-    border-radius: $radius50;
-}
-
-
 ul > li > p > a{
     text-decoration: none;
     color: $primary-color;
   }
 
-  
-
 @media only screen and (max-device-width: 767px) {
-  .site-footer, .copyright-footer {
-    display: none;
-  }
 
   .contactContainer {
     flex-direction: column;
     @include max-width-center;
-
 
     .wrapper, .form {
       width: 100%;
@@ -185,10 +173,7 @@ ul > li > p > a{
 }
 
 @media only screen and (max-device-width: 767px) {
-    .site-footer, .copyright-footer, .siteInfo, .header {
-        display: none;
-    }
-
+  
     .h1banner {
         display: none;
     }

@@ -149,7 +149,7 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-self: flex-start;
 }
 
 .info-text{

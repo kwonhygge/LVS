@@ -5,11 +5,10 @@
 }
 
 .employee-box{
-    width: 100&;
     margin-bottom: 35px;
-    &:last-child{
-        margin-bottom: 0px;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .overlay-wrapper{
@@ -43,6 +42,9 @@
 
 .employee-body{
     text-align: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
     p{
         font-size: 1rem;
         padding: 30px;
@@ -54,6 +56,7 @@
         margin-right: 10px;
         transform: rotate(90deg);
     }
+    text-align: center;
     display: block;
     padding: 25px 0;
     color: $darkgrey-color;
