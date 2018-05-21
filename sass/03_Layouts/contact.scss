@@ -1,8 +1,3 @@
-/* reset */
-body {
-    margin: 0;
-}
-
 .navbar {
   display: flex;
   background-color: #fff;
@@ -22,6 +17,7 @@ body {
 
 }
 
+//Banner header
 .header {
     height: 350px;
     text-align: center;
@@ -30,6 +26,7 @@ body {
     
 }
 
+//Breadcrumb
 .siteInfo {
     display: flex;
     max-width: 100%;
@@ -43,31 +40,21 @@ body {
     HEIGHT: 0PX;
 }
 
-
-.container {
-  display: flex;
-  justify-content: center;
-}
-
 .contactContainer {
-  display: flex;
-  justify-content: center;
-    /* align-items: center; */
-    /* height: 700px; */
-    width: 1200px;
+  @include max-width-center;
     margin-bottom: 60px;
     
     .form {
         background-color: #fff;
-        // width: 750px;
-        width: 60%;
-        height: 680px;
+        padding: 30px;
         box-shadow: 0 8px 28px 0 rgba(0,0,0,0.1);
         border-radius: 10px;
+        flex-grow: 2;
+        flex-shrink: 1;
+        flex-basis: 0%;
       }
 
       form {
-        margin: 40px;
 
         input {
             border: 1px solid #e8e8e8;
@@ -81,33 +68,46 @@ body {
             border-radius: 5px;
             resize: none;
             width: 100%;
+            margin-bottom: 10px;
         }
 
         h3 {
             color: $darkgrey-color;
             margin-bottom: 0px;
+            font-weight: $normal;
           }
       }
 
       .wrapper {
         background-color: #fff;
-        height: 490px;
-        margin-right: 20px; 
-        // width:530px;
-        width: 40%;
-        
+        flex-grow: 2;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        margin-bottom: 30px;
+      }
+
+      .maps{
+        iframe{
+          width: 100%;
+          height: 150px;
+        }
       }
 }
 
-.info {
-  margin: 40px;
+.contact-sideinfo{
+  padding: 30px;
 
   h2 {
     text-align: center;
     color: $darkgrey-color;
+    font-size: 21px;
+    line-height: 28px;
   }
   P {
     line-height: 30px;
+  }
+  span{
+    font-weight: $semibold;
   }
 }
 
@@ -117,101 +117,51 @@ ul {
   color: $darkgrey-color;
 }
 
-hr {
-  border-top: 0.5px solid #F3F3F3;
-}
-
-
-div.contactContainer > div.form > form > input[type="submit"] {
-    margin-top: 15px;
-    background-color: $cta-color;
-    border: 0;
-    color: #fff;
-    width: 150px;
-    border-radius: $radius50;
-}
-
-
 ul > li > p > a{
     text-decoration: none;
     color: $primary-color;
-  }
+}
 
+.contact-information{
+  border-top: 1px solid $light-grey;
+  border-bottom: 1px solid $light-grey;
+  padding: 20px 0;
+}
+ 
+@media only screen and (min-width: 768px){
   
-
-@media only screen and (max-device-width: 767px) {
-  .site-footer, .copyright-footer {
-    display: none;
-  }
-
-  .contactContainer {
-    flex-direction: column;
-    @include max-width-center;
-
-
-    .wrapper, .form {
-      width: 100%;
-      margin-right: 0px;
-      margin-top: 25px;
-      
-    } 
+  .contactContainer{
+    display: flex;
     
-    .form {
-      margin-bottom: 30px;
-    }
     .wrapper {
-      height: 360px;
+      margin-bottom: 0px;
+      display: flex;
+      align-self: flex-start;
+      margin-right: 30px;
+    }
+
+    .form{
+      padding: 30px;
+      flex-grow: 2;
+      flex-shrink: 1;
+      flex-basis: 0%;
     }
   }
-  .maps {
-    display: none;
-  }
-  div.contactContainer > div.form > form > input[type="submit"] {
-    width: 35vw;
-  }
-}
+} 
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
+@media only screen and (min-width: 1200px){
+
+  .contactContainer{
+    max-width: 1200px;
+
+    .wrapper{
+      flex-grow: 1.3;
+      flex-shrink: 1;
+      flex-basis: 0%;
+    }
   
-  .contactContainer {
-    @include max-width-center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  
-  .maps {
-    display: none;
+    .form{
+      padding: 45px;
+    }
   }
 }
-
-@media only screen and (max-device-width: 767px) {
-    .site-footer, .copyright-footer, .siteInfo, .header {
-        display: none;
-    }
-
-    .h1banner {
-        display: none;
-    }
-
-    .none {
-        display: none;
-    }
-
-    .flex {
-        display: flex;
-    }
-}
-
-
-
-/* iphone 5 */
-// @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) {}
-
-/* iphone 7, 8 */
-// @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) { }
-
-/* iphone 6+, 6s+, 7+, 8+ */
-// @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {}
-
-/* iphone X */
-// @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) { }
