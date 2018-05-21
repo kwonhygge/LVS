@@ -65,8 +65,6 @@ color: #fff;
     justify-content: space-around;
     align-items: center;
     height: 70px;
-    margin-top: 30px;
-    margin-bottom: 30px
 }
 
   .switch {
@@ -125,9 +123,9 @@ color: #fff;
 
   .filter_info {
       display: flex;
-      flex-direction: row;
-      align-items: center;
+      flex-direction: column;
       margin-top: 30px;
+      margin-bottom: 30px;
   }
 
   .byNavn {
@@ -152,9 +150,10 @@ color: #fff;
   }
 
   .filter_info {
-      margin-top: 30px;
-      margin-bottom: 30px;
-  }
+    flex-direction: row;
+    align-items: center;
+    }
+
     .none {
         display: none;
     }
