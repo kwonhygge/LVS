@@ -1,0 +1,85 @@
+.about-main-container{
+    @include max-width-center;
+    margin-bottom: 75px;
+    h1{
+        font-size: 32px;
+        line-height: 38px;
+        margin-top: 0;
+    }
+    span{
+        color: $primary-color;
+        font-size: 18px;
+        line-height: 28px;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+    p{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+}
+
+.about-cards{
+    background-color: #f6f6f6;
+}
+
+.system-view{
+    padding: 75px 0;
+}
+
+.system-view-container{
+    @include max-width-center;
+}
+
+.system-text{
+    h2{
+        font-size: 32px;
+        line-height: 38px;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .about-main-container{
+        max-width: 80%;
+        h1{
+            font-size: 50px;
+            line-height: 67px;
+        }
+        span{
+            font-size: 21px;
+            line-height: 32px;
+        }
+    }
+
+    .system-view{
+        padding: 100px;
+    }
+
+    .system-view-container{
+        display: flex;
+        align-items: center;
+    }
+
+    .system-text{
+        width: 50%;
+        h2{
+            font-size: 50px;
+            line-height: 67px;
+            font-weight: $semibold;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .about-main-container{
+        max-width: 850px;
+        margin-bottom: 100px;
+    }
+
+    .system-view-container{
+        max-width: 1200px;
+    }
+
+}

@@ -107,6 +107,9 @@
 .activity-grid-item {
     width: 31%;
     margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 
     hr {
         width: 120px;
@@ -175,15 +178,15 @@
 }
 
 .grid-activity-content {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
     .activity-titlename {
         display: none;
     }
 
     .activity-shortdescription {
-        margin: 30px;
-        display: inline-block;
-        display: flex;
-        flex-direction: column;
+        padding: 30px;
 
         p {
             margin-bottom: 30px;
