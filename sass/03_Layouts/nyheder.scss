@@ -47,33 +47,7 @@
 }
 
 .nyheder-btn{
-    i{
-        margin-right: 10px;
-    }
-    text-align: center;
-    display: block;
-    padding: 25px 0;
-    color: $darkgrey-color;
-    text-decoration: none;
-    &::before{
-        top: -28px;
-        left: 50%;
-        position: relative;
-        width: 110px;
-        height: 1px;
-        content: "";
-        display: inherit;
-        background-color: #f3f3f3;
-        transform: translateX(-50%);
-    }
-    &:hover{
-        border-radius: 0 0 10px 10px;
-        background-color: $cta-color;
-        color: $white-color;
-        &::before{
-            background-color: transparent;
-        }
-    }
+    @include hover-button;
 }
 
 .nyhed-container {
