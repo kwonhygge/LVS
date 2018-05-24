@@ -1,7 +1,7 @@
 
 .employees-container{
     width: 90%;
-    margin: 35px auto 0;
+    margin-bottom: 60px;
 }
 
 .employee-box{
@@ -63,7 +63,11 @@
     .employees-container{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+
+        .vWrapper{
+            margin: 0 1% 30px 1%;
+            flex: 0 0 31.3%;
+        }
     }
 
     .employee-box{
