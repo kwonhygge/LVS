@@ -48,46 +48,6 @@
     margin: 30px 0;
     color: $white-color;
 }
-/**		MEDIA QUERY - Computer 		**/
-
-@media only screen and (min-width: 1200px) {
-    .month .item-grid-wrapper {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .activity-container {
-        width: 1200px;
-        margin: 0 auto;
-    }
-}
-
-
-/**		MEDIA QUERY - Tablet lille og på højkant 		**/
-
-@media only screen and (min-width: 768px) {
-    .item-grid-wrapper {
-        margin-top: 35px;
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-@media only screen and (max-width: 980px) {
-    .activity-grid-item {
-        width: 48%;
-    }
-}
-
-@media only screen and (max-width: 672px) {
-
-    .activity-grid-item {
-        width: 100%;
-    }
-}
-
-
-
 
 //-----GRID VIEW CSS -----//
 .grid-view {
@@ -95,17 +55,28 @@
     .month-bar {
         width: 100%;
     }
+
+    .item-grid-wrapper {
+        max-width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto 60px;
+    
+        .vWrapper {
+            margin-bottom: 30px;
+    
+            img {
+                border-radius: $radius $radius 0 0;
+                height: 200px;
+                object-fit: cover;
+            }
+        }
+    }
+    
 }
 
-.item-grid-wrapper {
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: row wrap;
-}
 
 .activity-grid-item {
-    width: 31%;
     margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
@@ -325,4 +296,17 @@
             flex: 1 0 100%;
         }
     }
+}
+
+/**		MEDIA QUERY - Phone/Tablet 		**/
+
+@media only screen and (min-width: 768px) {
+  
+    .item-grid-wrapper {
+
+    .vWrapper{
+        margin: 0 1% 30px 1%;
+        flex: 0 0 31.3%;
+    }
+  }
 }
