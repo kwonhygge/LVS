@@ -12,6 +12,7 @@
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+    width: 95%;
 
     .title {
         width: 1200px;
@@ -53,7 +54,7 @@
 .grid-view {
 
     .month-bar {
-        width: 90%;
+        width: 100%;
     }
 
     .item-grid-wrapper {
@@ -291,7 +292,7 @@
     .item-list-wrapper{
         
         .list-activity-content{
-            padding-right: 100px
+            
         }
     }
 
@@ -299,8 +300,7 @@
 
         .item-list-wrapper{
             margin-left: 60px;
-            flex-direction: none;    
-            padding: 0;
+            
         }
 
         .item-list-wrapper:before {
@@ -340,6 +340,10 @@
         box-shadow: $shadowsmall;
     }
     .activity-list-item{
+
+        flex-direction: row;    
+            padding: 0px;
+
         .list-properties {
             padding: 30px 40px;
         }
