@@ -1,6 +1,9 @@
+.about-main{
+    padding: 75px;
+}
+
 .about-main-container{
     @include max-width-center;
-    margin-bottom: 75px;
     h1{
         font-size: 32px;
         line-height: 38px;
@@ -113,9 +116,12 @@
 
 @media only screen and (min-width: 1200px) {
 
+    .about-main{
+        padding: 100px;
+    }
+
     .about-main-container{
         max-width: 850px;
-        margin-bottom: 100px;
     }
 
     .system-view-container{
