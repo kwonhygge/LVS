@@ -19,7 +19,7 @@
 */
 
 .banner{
-    height: 50vh;
+    height: 500px;
     position: relative;
     img{
         display: block;
@@ -47,7 +47,7 @@
 
 .banner-text-wrapper{
     h1{
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         font-weight: $semibold;
         line-height: 3rem;
         font-weight: bold;
@@ -257,18 +257,32 @@
 
 .news-box{
     margin-top: 2.1rem;
-    position: relative;
     img{
         border-radius: $radius;
+        display: block;
     }
 }
 
-.news-text{
+.news-front-wrapper{
+    position: relative;
+}
+
+.news-text-wrapper{
     position: absolute;
-    bottom: 1.25rem;
-    left: 1.25rem;
+    bottom: 30px;
+    left: 30px;
+}
+
+.news-text-overlay{
+    position: absolute;
+    border-radius: 10px;
     color: $white-color;
     font-size: 0.9rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(rgba(34, 34, 34, 0.35), rgba(34, 34, 34, 0.35));
     h4{
         font-size: 1.1rem;
         width: 250px;
@@ -279,6 +293,7 @@
         background-color: $cta-color;
         padding: 0.5rem 0.9rem;
         font-size: 0.75rem;
+        display: inline-block;
     }
     a{
         color: $white-color;
@@ -422,6 +437,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
         div{
             text-align: center;
             width: 45%;
@@ -562,6 +578,11 @@
         }
     }
 
+    .news-text-wrapper{
+        bottom: 15px;
+        left: 15px;
+    }
+
     .newsletter-container{
         max-width: 650px;
         h2{
@@ -599,13 +620,14 @@
     .spons{
         padding: 50px 0;
         .spons-container{
+            align-items: flex-end;
             div{
                 width: 20%;
             &:nth-child(1), &:nth-child(2){
                     margin-bottom: 0px;
                 }
                 img{
-                    width: 180px;
+                    width: 155px;
                 }
             }
         }
@@ -718,6 +740,11 @@
 
      .news-container{
         max-width: 1200px;
+    }
+
+    .news-text-wrapper{
+        bottom: 30px;
+        left: 30px;
     }
 
     .slider-wrapper{
